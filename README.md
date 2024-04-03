@@ -10,7 +10,8 @@ The company supplied sales data that was collected from the beginning of 2017 to
 
 # Solution 
 The csv files supplied by the company were stored in a data lake bucket within Google Cloud Storage. A mage orchestration application was created to load the files from Google Cloud Storage, transform the files using Python and the Pandas library and export them to the Google BigQuery data warehouse. Within the big query warehouse data is partitioned daily within the final sales table. The final sales table is the linked to a dashboard in Data Studio that business will use to get the insights.  Terraform is used to manage infrastructure as code and all the Google Cloud resources used within this project are created through Terraform. 
- 
+![alt text](https://github.com/KweziJaji/SalesDataProject/blob/main/Solution.JPG?raw=true)
+
 # How to replicate solution? 
  # Pre-requisites
  - Docker must be installed
