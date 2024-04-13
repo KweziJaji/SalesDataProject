@@ -1,0 +1,18 @@
+version: '3'
+services:
+  sales_project:
+    image: mageai/mageai:0.9.65
+    container_name: sales_project
+    command: mage start sales_project
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      USER_CODE_PATH: /home/src/sales_project
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+    restart: on-failure:5
