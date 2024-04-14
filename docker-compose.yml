@@ -4,8 +4,6 @@ services:
     image: mageai/mageai:0.9.65
     container_name: sales_project
     command: mage start sales_project
-    env_file:
-      - .env
     build:
       context: .
       dockerfile: Dockerfile
