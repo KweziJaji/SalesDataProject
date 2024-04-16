@@ -5,7 +5,7 @@ import os
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '#update to point to your file#'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/src/sales_project/gc_creds.json'
 
 project_id = 'salesdataproject-kj'
 
