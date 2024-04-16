@@ -31,7 +31,10 @@ The csv files supplied by the company were stored in a data lake bucket within G
 
   ## Set Up Google Resources
   -	Create a project in Google Cloud
-  -	Set up a service account 
+  -	Set up a service account. The service account needs to have the following roles:
+    * BigQuery Admin
+    * Compute Admin
+    * Storage Admin     
   -	Create a key for the service account and download the json version 
   -	Change directory into the Terraform folder and edit the files to point to your key file
   -	Run the following command to create the GCP resources:
